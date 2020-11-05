@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-01T09:30:03.272Z</updated>
+  <updated>2020-11-05T11:04:25.187Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小数点精确问题</title>
+    <link href="http://example.com/2020/11/05/%E7%B2%BE%E7%A1%AE%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/2020/11/05/%E7%B2%BE%E7%A1%AE%E9%97%AE%E9%A2%98/</id>
+    <published>2020-11-04T16:00:00.000Z</published>
+    <updated>2020-11-05T11:04:25.187Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="洛谷p5719"><a href="#洛谷p5719" class="headerlink" title="洛谷p5719"></a>洛谷p5719</h2><p>题目描述<br>给定 n(n≤10000)n(n≤10000) 和 k(k≤ 100)k(k≤100)，将从 1 到 nn 之间的所有正整数可以分为两类：A 类数可以被 k整除（也就是说是 k 的倍数），而 B 类数不能。请输出这两类数的平均数，精确到小数点后 1 位，用空格隔开。</p><p>数据保证两类数的个数都不会是 0。</p><p>输入格式<br>无</p><p>输出格式<br>无</p><p>输入输出样例<br>输入 #1复制<br>100 16<br>输出 #1复制<br>56.0 50.1</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;洛谷p5719&quot;&gt;&lt;a href=&quot;#洛谷p5719&quot; class=&quot;headerlink&quot; title=&quot;洛谷p5719&quot;&gt;&lt;/a&gt;洛谷p5719&lt;/h2&gt;&lt;p&gt;题目描述&lt;br&gt;给定 n(n≤10000)n(n≤10000) 和 k(k≤ 100)k(k≤100</summary>
+      
+    
+    
+    
+    <category term="算法" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>全排列问题（dfs）</title>
