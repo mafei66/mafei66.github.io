@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-05T11:04:25.187Z</updated>
+  <updated>2020-11-11T10:12:53.717Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,23 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ubuntu使用教程</title>
+    <link href="http://example.com/2020/11/11/ubnutu%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://example.com/2020/11/11/ubnutu%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <published>2020-11-10T16:00:00.000Z</published>
+    <updated>2020-11-11T10:12:53.717Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">control+alt+t&#x2F;&#x2F;打开终端</span><br><span class="line">sudo su&#x2F;&#x2F;开启高级权限</span><br><span class="line">dpkg --list&#x2F;&#x2F;显示所有软件</span><br><span class="line">sudo apt-get --purge remove 包名 &#x2F;&#x2F;（--purge是可选项，写上这个属性是将软件及其配置文件一并删除</span><br></pre></td></tr></table></figure><p>##打包和压缩文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">bunzip2 file1.bz2 解压一个叫做 &#39;file1.bz2&#39;的文件</span><br><span class="line">bzip2 file1 压缩一个叫做 &#39;file1&#39; 的文件</span><br><span class="line">gunzip file1.gz 解压一个叫做 &#39;file1.gz&#39;的文件</span><br><span class="line">gzip file1 压缩一个叫做 &#39;file1&#39;的文件</span><br><span class="line">gzip -9 file1 最大程度压缩</span><br><span class="line">rar a file1.rar test_file 创建一个叫做 &#39;file1.rar&#39; 的包</span><br><span class="line">rar a file1.rar file1 file2 dir1 同时压缩 &#39;file1&#39;, &#39;file2&#39; 以及目录 &#39;dir1&#39;</span><br><span class="line">rar x file1.rar 解压rar包</span><br><span class="line">unrar x file1.rar 解压rar包</span><br><span class="line">tar -cvf archive.tar file1 创建一个非压缩的 tarball</span><br><span class="line">tar -cvf archive.tar file1 file2 dir1 创建一个包含了 &#39;file1&#39;, &#39;file2&#39; 以及 &#39;dir1&#39;的档案文件</span><br><span class="line">tar -tf archive.tar 显示一个包中的内容</span><br><span class="line">tar -xvf archive.tar 释放一个包</span><br><span class="line">tar -xvf archive.tar -C &#x2F;tmp 将压缩包释放到 &#x2F;tmp目录下</span><br><span class="line">tar -cvfj archive.tar.bz2 dir1 创建一个bzip2格式的压缩包</span><br><span class="line">tar -xvfj archive.tar.bz2 解压一个bzip2格式的压缩包</span><br><span class="line">tar -cvfz archive.tar.gz dir1 创建一个gzip格式的压缩包</span><br><span class="line">tar -xvfz archive.tar.gz 解压一个gzip格式的压缩包</span><br><span class="line">zip file1.zip file1 创建一个zip格式的压缩包</span><br><span class="line">zip -r file1.zip file1 file2 dir1 将几个文件和目录同时压缩成一个zip格式的压缩包</span><br><span class="line">unzip file1.zip 解压一个zip格式压缩包</span><br></pre></td></tr></table></figure><h2 id="apt工具"><a href="#apt工具" class="headerlink" title="apt工具"></a>apt工具</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">apt-get install package_name 安装&#x2F;更新一个 deb 包</span><br><span class="line">apt-cdrom install package_name 从光盘安装&#x2F;更新一个 deb 包</span><br><span class="line">apt-get update 升级列表中的软件包</span><br><span class="line">apt-get upgrade 升级所有已安装的软件</span><br><span class="line">apt-get remove package_name 从系统删除一个deb包</span><br><span class="line">apt-get check 确认依赖的软件仓库正确</span><br><span class="line">apt-get clean 从下载的软件包中清理缓存</span><br><span class="line">apt-cache search searched-package 返回包含所要搜索字符串的软件包名称</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;命令&quot;&gt;&lt;a href=&quot;#命令&quot; class=&quot;headerlink&quot; title=&quot;命令&quot;&gt;&lt;/a&gt;命令&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span </summary>
+      
+    
+    
+    
+    <category term="liunx" scheme="http://example.com/categories/liunx/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>小数点精确问题</title>
     <link href="http://example.com/2020/11/05/%E7%B2%BE%E7%A1%AE%E9%97%AE%E9%A2%98/"/>
     <id>http://example.com/2020/11/05/%E7%B2%BE%E7%A1%AE%E9%97%AE%E9%A2%98/</id>
     <published>2020-11-04T16:00:00.000Z</published>
-    <updated>2020-11-05T11:04:25.187Z</updated>
+    <updated>2020-11-11T10:14:04.759Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="洛谷p5719"><a href="#洛谷p5719" class="headerlink" title="洛谷p5719"></a>洛谷p5719</h2><p>题目描述<br>给定 n(n≤10000)n(n≤10000) 和 k(k≤ 100)k(k≤100)，将从 1 到 nn 之间的所有正整数可以分为两类：A 类数可以被 k整除（也就是说是 k 的倍数），而 B 类数不能。请输出这两类数的平均数，精确到小数点后 1 位，用空格隔开。</p><p>数据保证两类数的个数都不会是 0。</p><p>输入格式<br>无</p><p>输出格式<br>无</p><p>输入输出样例<br>输入 #1复制<br>100 16<br>输出 #1复制<br>56.0 50.1</p>]]></content>
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="洛谷p5719"><a href="#洛谷p5719" class="headerlink" title="洛谷p5719"></a>洛谷p5719</h2><p>题目描述<br>给定 n(n≤10000)n(n≤10000) 和 k(k≤ 100)k(k≤100)，将从 1 到 nn 之间的所有正整数可以分为两类：A 类数可以被 k整除（也就是说是 k 的倍数），而 B 类数不能。请输出这两类数的平均数，精确到小数点后 1 位，用空格隔开。</p><p>数据保证两类数的个数都不会是 0。</p><p>输入格式<br>无</p><p>输出格式<br>无</p><p>输入输出样例<br>输入 #1复制<br>100 16<br>输出 #1复制<br>56.0 50.1</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">p5719</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">double</span> n=sc.nextDouble();</span><br><span class="line">        <span class="keyword">double</span> k=sc.nextDouble();</span><br><span class="line">        <span class="keyword">double</span> m=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">double</span> j=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">double</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">double</span> num=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">double</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (i%k==<span class="number">0</span>)&#123;</span><br><span class="line">                sum+=i;</span><br><span class="line">                m+=<span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                num+=i;</span><br><span class="line">                j+=<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">double</span> a=sum/m;</span><br><span class="line">        <span class="keyword">double</span> b=num/j;</span><br><span class="line">        <span class="comment">/*String sr1=String.format(&quot;%.1f&quot;,a);</span></span><br><span class="line"><span class="comment">        String sr2=String.format(&quot;%.1f&quot;,b);</span></span><br><span class="line"><span class="comment">        System.out.println(sr1+&quot; &quot;+sr2);*/</span></span><br><span class="line">        System.out.printf(<span class="string">&quot;%.1f&quot;</span>,sum/m);</span><br><span class="line">        System.out.printf(<span class="string">&quot;%.1f&quot;</span>,num/j);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;洛谷p5719&quot;&gt;&lt;a href=&quot;#洛谷p5719&quot; class=&quot;headerlink&quot; title=&quot;洛谷p5719&quot;&gt;&lt;/a&gt;洛谷p5719&lt;/h2&gt;&lt;p&gt;题目描述&lt;br&gt;给定 n(n≤10000)n(n≤10000) 和 k(k≤ 100)k(k≤100</summary>
+    <summary type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;洛谷p5719&quot;&gt;&lt;a href=&quot;#洛谷p5719&quot; class=&quot;headerlink&quot; title=&quot;洛谷p5719&quot;&gt;&lt;/a&gt;洛谷p571</summary>
       
     
     
-    
-    <category term="算法" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
   </entry>
