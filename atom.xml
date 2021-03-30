@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-17T03:20:13.451Z</updated>
+  <updated>2021-03-30T10:42:16.130Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lucky</title>
+    <link href="http://example.com/2021/03/30/%E5%BC%80%E5%A7%8B/"/>
+    <id>http://example.com/2021/03/30/%E5%BC%80%E5%A7%8B/</id>
+    <published>2021-03-29T16:00:00.000Z</published>
+    <updated>2021-03-30T10:42:16.130Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/mafei66/YiLoutfy/img/mmexport1616852686235.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/mafei66/YiLoutfy/img/mmexport1616852686235.jpg&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>判断质数+判断回文数</title>
