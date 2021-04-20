@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-30T10:42:16.130Z</updated>
+  <updated>2021-04-20T10:02:11.010Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>spring学习的经验之谈1</title>
+    <link href="http://example.com/2021/04/19/spring%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%BB%8F%E9%AA%8C%E4%B9%8B%E8%B0%88/"/>
+    <id>http://example.com/2021/04/19/spring%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%BB%8F%E9%AA%8C%E4%B9%8B%E8%B0%88/</id>
+    <published>2021-04-18T16:00:00.000Z</published>
+    <updated>2021-04-20T10:02:11.010Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在学习spring之前学习了maven</p><h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>1.在使用lombok插件时发现无法使用set、get方法<br>原因：<br>maven中添加好依赖后，由于使用的是idea开发，没有下载idea插件。还需要设置<br><img src="https://cdn.jsdelivr.net/gh/mafei66/YiLoutfy/img/1.jpg"><br>依赖：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.18.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;在学习spring之前学习了maven&lt;/p&gt;
+&lt;h2 id=&quot;遇到的问题&quot;&gt;&lt;a href=&quot;#遇到的问题&quot; class=&quot;headerl</summary>
+      
+    
+    
+    
+    <category term="java开发" scheme="http://example.com/categories/java%E5%BC%80%E5%8F%91/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>lucky</title>
